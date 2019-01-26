@@ -19,8 +19,13 @@ Created during learning python with MITx: 6.00.1x course.
 ## Setup
 Just download ps4a.py and words.txt into the same directory and then run ps4a.py like below:
 
+Linux:
 ```
 $ python3 ps4a.py
+```
+Windows:
+```
+>python ps4a.py
 ```
 
 ## Features
