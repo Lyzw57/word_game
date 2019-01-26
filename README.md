@@ -32,7 +32,7 @@ Windows:
 To-do:
 * function calculating word's score
 * function updating letters on player's hand
-* function chechking word's validity
+* function checking word's validity
 * function calculating number of letters in player's hand
 * function responsible for player's move
 * function responsible for playing a game
