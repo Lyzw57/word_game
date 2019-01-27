@@ -242,17 +242,16 @@ def playHand(hand, wordList, n):
         displayHand(hand)
         user_word = input("Enter a word or '.' if you want to end the game. ")
         if user_word == ".":
-            break            
+            break
+        if not isValidWord(user_word, hand, wordList):
+            print("Invalid word, please try again.")
         else:
-            if not isValidWord(user_word, hand, wordList):
-                print("Invalid word, please try again.")
-            else:
-                word_score = getWordScore(user_word, n)
-                total_score += word_score
-                print("'" + user_word + "' earned " + str(word_score) + " points. Total: " + str(total_score) + " points")
+            word_score = getWordScore(user_word, n)
+            total_score += word_score
+            print("'" + user_word + "' earned " + str(word_score) + " points. Total: " + str(total_score) + " points")
                 
-                hand = updateHand(hand, user_word)
-                hand_length = calculateHandlen(hand)
+            hand = updateHand(hand, user_word)
+            hand_length = calculateHandlen(hand)
 
     print("Run out of letters. Total score: " + str(total_score) + ".")
 
