@@ -244,7 +244,7 @@ def playHand(hand, wordList, n):
         user_word = input("Enter a word or '.' if you want to end the game. ")
         if user_word == ".":
             break
-            
+
         if not isValidWord(user_word, hand, wordList):
             print("Invalid word, please try again.")
         else:
@@ -273,9 +273,23 @@ def playGame(wordList):
  
     2) When done playing the hand, repeat from step 1    
     """
-    # TO DO ... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this line when you code the function
-   
+    user_hand = {}
+    user_hand_size = HAND_SIZE
+
+    while True:
+        choice = input("Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+        if choice == 'n':
+            user_hand = dealHand(user_hand_size)
+            playHand(user_hand, wordList, user_hand_size)
+        elif choice == 'r':
+            if len(user_hand) == 0:
+                print("You have not played a hand yet. Please play a new hand first!")
+            else:
+                playHand(user_hand,wordList, user_hand_size)
+        elif choice == 'e':
+            break
+        else:
+            print("Invalid command.")   
 
 
 
