@@ -30,11 +30,11 @@ Windows:
 
 ## Features
 To-do:
-* ~~function calculating word's score~~
-* ~~function updating letters in player's hand~~
-* ~~function checking word's validity~~
+* ~~function calculating word's score
+* ~~function updating letters in player's hand
+* ~~function checking word's validity
 * ~~function calculating number of letters in player's hand
-* function responsible for player's move
+* ~~function responsible for player's move
 * function responsible for playing a game
 * logic for computer moves
 
