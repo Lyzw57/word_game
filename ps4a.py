@@ -240,9 +240,11 @@ def playHand(hand, wordList, n):
     while(hand_length > 0):
         print("Current hand:", end=" ")
         displayHand(hand)
+
         user_word = input("Enter a word or '.' if you want to end the game. ")
         if user_word == ".":
             break
+            
         if not isValidWord(user_word, hand, wordList):
             print("Invalid word, please try again.")
         else:
