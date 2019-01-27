@@ -157,8 +157,10 @@ def updateHand(hand, word):
         return hand_copy
 
     for letter in word:
-        if hand_copy[letter] > 0:
+        if hand_copy[letter] > 1:
             hand_copy[letter] -= 1
+        else:
+            hand_copy.pop(letter)
 
     return hand_copy
 
