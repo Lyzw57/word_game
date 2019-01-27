@@ -29,6 +29,15 @@ Windows:
 ```
 
 ## Features
+
+User can choose if want to play random hand of letter or stay with the same one.
+User can also let play computer or do it himself/herself.
+
+Word punctation is similar to the scrabble's:
+* each letter has its own value eq. a - 3 points
+* word's score is sum of the letters score multiply by word's length
+* user receive 50 additional points if spent all the letters in first turn 
+
 To-do:
 * ~~function calculating word's score~~
 * ~~function updating letters in player's hand~~
@@ -36,7 +45,8 @@ To-do:
 * ~~function calculating number of letters in player's hand~~
 * ~~function responsible for player's move~~
 * ~~function responsible for playing a game~~
-* logic for computer moves
+* ~~logic for computer moves~~
+* refactor playGame function in psb4.py 
 
 ## Status
 
