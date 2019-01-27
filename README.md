@@ -35,7 +35,7 @@ To-do:
 * ~~function checking word's validity~~
 * ~~function calculating number of letters in player's hand~~
 * ~~function responsible for player's move~~
-* function responsible for playing a game
+* ~~function responsible for playing a game~~
 * logic for computer moves
 
 ## Status
